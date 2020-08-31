@@ -4,7 +4,10 @@ const bodyParser = require('body-parser');
 const { randomBytes } = require('crypto');
 
 const app = express();
+const cors = require('cors');
+
 app.use(bodyParser.json());
+app.use(cors());
 
 const port = 4001;
 
