@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default () => {
 
-    const [title, setTitle] = useState('')
+    const [title, setTitle] = useState('');
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -12,7 +12,7 @@ export default () => {
         });
 
         setTitle('');
-    }
+    };
     return <div>
         <form onSubmit={onSubmit}>
             <div className="form-group">
